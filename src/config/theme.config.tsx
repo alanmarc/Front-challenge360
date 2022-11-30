@@ -42,7 +42,6 @@ export const theme = createTheme({
             fontSize: 42,
             fontWeight: 800,
             marginTop: 6,
-            textAlign: 'center',
             '@media (max-width:600px)': {
                 fontSize: 28,
                 margin: 4,
@@ -64,11 +63,12 @@ export const theme = createTheme({
         },
         subtitle1: {
             color: '#9292a5',
-            fontSize: 28,
+            fontSize: 20,
+            fontWeight: 500,
             marginTop: 6,
             textAlign: 'left',
             '@media (max-width:600px)': {
-                fontSize: 20,
+                fontSize: 16,
                 margin: 4,
             },
         },

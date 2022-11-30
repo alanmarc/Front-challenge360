@@ -20,3 +20,54 @@ code {
   grid-template-columns: 1fr;
   gap: 30px;
 }
+
+.container-form{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.info{
+  width: auto;
+
+}
+
+.info h2{
+  color: #1b7cd6;
+}
+.info p {
+  color: #adadc9;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  max-width: 400px;
+}
+.info img{
+  width: -webkit-fill-available;
+}
+.span-login{
+  color: #1b7cd6;
+}
+.message-error{
+  color: #d6661b;
+  font-size: 28px;
+  font-weight: 500;
+}
+.message-login{
+  font-size: 28px;
+}
+
+.message-login span{
+  color: #1b7cd6;
+  font-weight: 600;
+}
+  
+@media screen and (min-width: 700px ) {
+   .container-form{
+    display: flex;
+    flex-direction: row;
+   }
+   .message-error{
+    font-size: 48px;
+   }
+   
+  }

@@ -14,7 +14,7 @@ export const CardUser = ({ email, first, last, avatar}: UserCard) => {
   return (
     <Card sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginX: 'auto', marginY: 8, backgroundColor: '#567de7', borderRadius: 5, justifyContent: 'center', paddingY: 10, paddingX: 0}} >
       <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-        <CardContent sx={{ flex: '1 0 auto' }}>
+        <CardContent sx={{ flex: '1 0 auto', textAlign: 'center' }}>
           <Typography component="div" variant="h2">
             {first}
           </Typography>

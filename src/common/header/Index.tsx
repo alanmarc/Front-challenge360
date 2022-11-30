@@ -2,11 +2,11 @@ import React from "react";
 import { AppBar, Box, Toolbar, IconButton, Typography, Menu, Container, Avatar, Button, Tooltip, MenuItem} from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import CoPresentIcon from '@mui/icons-material/CoPresent';
-import  { NavLink, Link} from 'react-router-dom';
-
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+import  { Link, useNavigate} from 'react-router-dom';
 
 function ResponsiveAppBar() {
+  const navigate = useNavigate();
+
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
   const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
 
@@ -25,6 +25,11 @@ function ResponsiveAppBar() {
     setAnchorElUser(null);
   };
 
+  const handleLoggOut  = () =>{
+    localStorage.clear();
+    alert("Session Closed");
+    navigate("/");
+  }
   return (
     <AppBar position="static" >
       <Container maxWidth="xl">
@@ -78,16 +83,21 @@ function ResponsiveAppBar() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-                <Link to={"/login"} style={{ textDecoration: 'none'}}>
+              <Link to={"/"} style={{ textDecoration: 'none'}}>
                     <MenuItem onClick={handleCloseNavMenu}>
-                      <Typography textAlign="center">Login</Typography>
+                      <Typography textAlign="center">Inicio</Typography>
                     </MenuItem>
                 </Link>
-                <Link to={"/listusers"} style={{ textDecoration: 'none'}}>
-                    <MenuItem onClick={handleCloseNavMenu}>
-                      <Typography textAlign="center">Usuarios</Typography>
-                    </MenuItem>
-                </Link>
+              <Link to={"/login"} style={{ textDecoration: 'none'}}>
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">Login</Typography>
+                </MenuItem>
+              </Link>
+              <Link to={"/listusers"} style={{ textDecoration: 'none'}}>
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">Usuarios</Typography>
+                </MenuItem>
+              </Link>
               
             </Menu>
           </Box>
@@ -149,11 +159,10 @@ function ResponsiveAppBar() {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
+                <MenuItem onClick={handleCloseUserMenu}>
+                  <Typography textAlign="center" onClick={handleLoggOut}>Loggout</Typography>
                 </MenuItem>
-              ))}
+              
             </Menu>
           </Box>
         </Toolbar>

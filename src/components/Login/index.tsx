@@ -1,21 +1,25 @@
 import React from "react";
 import { Field, Form, Formik } from "formik";
 import { object, string } from "yup";
+import { useNavigate } from "react-router-dom";
 import { Card, TextField, Divider, Typography, Button } from "@mui/material";
+import axios from "axios";
 
 const initialValues = {
     email: '',
     password: '',
 }
 
+const URL = "https://reqres.in/api/register";
 export const FormLogin = () => {
-  return (
-    <Card>
+  const navigate = useNavigate();
 
+  return (
+    <Card sx={{width: "100%", alignSelf : 'center'}}>
       <Typography
         variant="subtitle1">STAR FOR FREE</Typography>
-      <Typography variant="h2">Sign uo to Zoho'</Typography>
-      <Typography variant="subtitle1">ALREADI A MEMBER? <span >Log in</span></Typography>
+      <Typography sx={{ textAlign: 'left'}} variant="h2">Sign uo to Zoho'</Typography>
+      <Typography variant="subtitle1">ALREADI A MEMBER? <span style={{color: '#1b7cd6'}}>Log in</span></Typography>
       
         <Formik
         initialValues={initialValues}
@@ -23,10 +27,26 @@ export const FormLogin = () => {
           email: string().required("Please enter email").email("Invalid email"),
           password: string()
             .required("Please enter password")
-            .min(7, "Password should be minimum 7 characters long"),
+            .min(4, "Password should be minimum 7 characters long"),
         })}
         onSubmit={(values, formikHelpers) => {
           console.log(values);
+          const sendPostLogin = async () => {
+            try {
+              const resp = await axios.post(URL, values);
+              console.log("-----------")
+              const { data } = resp;
+              localStorage.setItem('logged', 'true');
+              localStorage.setItem('id', data.id);
+              localStorage.setItem('token', data.token);
+              localStorage.setItem('email', values.email)
+              alert("Login Succefull");
+              navigate("/");
+            } catch (error) {
+              alert("Unregistered user :( ");
+            }
+          };
+          sendPostLogin();
           formikHelpers.resetForm();
         }}  
         >
@@ -48,7 +68,7 @@ export const FormLogin = () => {
                 helperText={Boolean(touched.email) && errors.email}
               />
               <Typography>
-                E-mail
+                Password
               </Typography>
               <Field
                 name="password"
