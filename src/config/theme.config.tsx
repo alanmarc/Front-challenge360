@@ -39,7 +39,8 @@ export const theme = createTheme({
             },
         },
         h2: {
-            fontSize: 36,
+            fontSize: 42,
+            fontWeight: 800,
             marginTop: 6,
             textAlign: 'center',
             '@media (max-width:600px)': {
@@ -47,7 +48,8 @@ export const theme = createTheme({
                 margin: 4,
             },
         },
-        subtitle1: {
+        subtitle2: {
+            color: '#030303',
             fontSize: 28,
             marginTop: 6,
             textAlign: 'center',
@@ -55,7 +57,21 @@ export const theme = createTheme({
                 fontSize: 20,
                 margin: 4,
             },
-        }
+
+        },
+        button:{
+            padding: 5,
+        },
+        subtitle1: {
+            color: '#9292a5',
+            fontSize: 28,
+            marginTop: 6,
+            textAlign: 'left',
+            '@media (max-width:600px)': {
+                fontSize: 20,
+                margin: 4,
+            },
+        },
     }
 });
 

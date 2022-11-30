@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const client = axios.create({
-    baseURL: "https://reqres.in/api/users"
+    baseURL: "https://reqres.in/api/users?"
 })
 
 export interface ResponseAPI {

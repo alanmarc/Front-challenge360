@@ -12,16 +12,16 @@ export type UserCard ={
 
 export const CardUser = ({ email, first, last, avatar}: UserCard) => {
   return (
-    <Card sx={{ display: 'flex', marginX: 'auto', margin: 10, backgroundColor: '#567de7', borderRadius: 5, justifyContent: 'space-evenly', padding: 4,}}>
+    <Card sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginX: 'auto', marginY: 8, backgroundColor: '#567de7', borderRadius: 5, justifyContent: 'center', paddingY: 10, paddingX: 0}} >
       <Box sx={{ display: 'flex', flexDirection: 'column' }}>
         <CardContent sx={{ flex: '1 0 auto' }}>
           <Typography component="div" variant="h2">
             {first}
           </Typography>
-          <Typography variant="subtitle1">
+          <Typography variant="subtitle2">
             {last}
           </Typography>
-          <Typography variant="subtitle1">
+          <Typography variant="subtitle2">
             {email}
           </Typography>
         </CardContent>
@@ -30,7 +30,7 @@ export const CardUser = ({ email, first, last, avatar}: UserCard) => {
         component="img"
         sx={{ width: 200, borderRadius: '50%' }}
         image={avatar}
-        alt="Live from space album cover"
+        alt="Profile Photo"
       />
     </Card>
   )
