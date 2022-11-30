@@ -1,3 +1,31 @@
+# Challenge FrontEnd 360
+
+## Description
+Aplicación web desarrollada con Reactjs la cual consume una api de terceros, proporciona informacion de usuarios registrados y se puede iniciar sesión con cuentas registradas
+
+## Deploy App
+- Deploy [Link](https://front-challenge360.vercel.app/)
+
+## Tecnologies
+<div>
+    <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
+    <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white">
+    <img src="https://img.shields.io/badge/TypeScript-1572B6?style=for-the-badge&logo=typescript&logoColor=white">
+    <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white">
+</div>
+
+## Api 
+    Dirección de la Api donde fue consumido el servicio
+    - Link Api [Link](https://reqres.in/)
+
+## Autor
+    <h1>Developed and designed by Alan Marcos. ©2022.</h1>
+    - Portfolio [Link](https://portafolio-sable-zeta.vercel.app/)
+    - Github [Link](https://github.com/alanmarc)
+    - Linkedin [Link](https://www.linkedin.com/in/alan-marcos-807027228)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -45,4 +73,4 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-#Deploy --> https://front-challenge360.vercel.app/
+

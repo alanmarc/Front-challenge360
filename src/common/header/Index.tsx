@@ -31,7 +31,7 @@ function ResponsiveAppBar() {
     navigate("/");
   }
   return (
-    <AppBar position="static" >
+    <AppBar position="sticky" >
       <Container maxWidth="xl">
         <Toolbar disableGutters >
           <CoPresentIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />

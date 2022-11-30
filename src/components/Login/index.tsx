@@ -18,16 +18,17 @@ export const FormLogin = () => {
     <Card sx={{width: "100%", alignSelf : 'center'}}>
       <Typography
         variant="subtitle1">STAR FOR FREE</Typography>
-      <Typography sx={{ textAlign: 'left'}} variant="h2">Sign uo to Zoho'</Typography>
-      <Typography variant="subtitle1">ALREADI A MEMBER? <span style={{color: '#1b7cd6'}}>Log in</span></Typography>
-      
+      <Typography sx={{ textAlign: 'left'}} variant="h2">Sign uo to Zoho.</Typography>
+      <Typography variant="subtitle1">Already a member? <span style={{color: '#1b7cd6'}}>Log in</span></Typography>
+      <br/>
         <Formik
         initialValues={initialValues}
         validationSchema={object({
           email: string().required("Please enter email").email("Invalid email"),
           password: string()
             .required("Please enter password")
-            .min(4, "Password should be minimum 7 characters long"),
+            .min(6, "Password should be minimum 6 characters long")
+
         })}
         onSubmit={(values, formikHelpers) => {
           console.log(values);
@@ -53,7 +54,7 @@ export const FormLogin = () => {
           {({ errors, isValid, touched, dirty }) => (
             <Form className="formulario">
 
-              <Typography>
+              <Typography >
                 E-mail
               </Typography>
               <Field
@@ -67,6 +68,7 @@ export const FormLogin = () => {
                 error={Boolean(errors.email) && Boolean(touched.email)}
                 helperText={Boolean(touched.email) && errors.email}
               />
+              <br/>
               <Typography>
                 Password
               </Typography>
@@ -81,6 +83,7 @@ export const FormLogin = () => {
                 error={Boolean(errors.password) && Boolean(touched.password)}
                 helperText={Boolean(touched.password) && errors.password}
               />
+              <br/>
               <Button
                 type="submit"
                 variant="contained"
