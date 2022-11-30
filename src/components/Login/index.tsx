@@ -2,7 +2,7 @@ import React from "react";
 import { Field, Form, Formik } from "formik";
 import { object, string } from "yup";
 import { useNavigate } from "react-router-dom";
-import { Card, TextField, Divider, Typography, Button } from "@mui/material";
+import { Card, TextField, Typography, Button } from "@mui/material";
 import axios from "axios";
 
 const initialValues = {

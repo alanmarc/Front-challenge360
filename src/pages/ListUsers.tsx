@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Typography, Container, Button } from '@mui/material';
 import Axios from "axios";
 import { ResponseAPI } from '../api/getUsers';

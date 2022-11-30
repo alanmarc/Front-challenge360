@@ -3,6 +3,9 @@
 ## Description
 Aplicación web desarrollada con Reactjs la cual consume una api de terceros, proporciona informacion de usuarios registrados y se puede iniciar sesión con cuentas registradas
 
+## Important
+    La validación de los caracteres del password se redujeron a 6 ya que esa es la longitud de la contraseña que se proporciono para el desarrollo
+
 ## Deploy App
 - Deploy [Link](https://front-challenge360.vercel.app/)
 
