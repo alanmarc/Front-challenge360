@@ -4,11 +4,12 @@
 Aplicación web desarrollada con Reactjs la cual consume una api de terceros, proporciona informacion de usuarios registrados y se puede iniciar sesión con cuentas registradas
 
 <img src="https://raw.githubusercontent.com/alanmarc/Front-challenge360/main/public/Challenge360.PNG">
+
 ## Important
     La validación de los caracteres del password se redujeron a 6 ya que esa es la longitud de la contraseña que se proporciono para el desarrollo
 
 ## Deploy App
-- Deploy [Link](https://front-challenge360.vercel.app/)
+- Deploy ---> [Link](https://front-challenge360.vercel.app/)
 
 ## Tecnologies
 <div>
@@ -21,14 +22,18 @@ Aplicación web desarrollada con Reactjs la cual consume una api de terceros, pr
 </div>
 
 ## Api 
-    Dirección de la Api donde fue consumido el servicio
-    - Link Api [Link](https://reqres.in/)
+Dirección de la Api donde fue consumido el servicio
+- LinkApi [Link](https://reqres.in/)
+
+## Description Challenge 
+- LinkChallenge [Link](https://pagal.notion.site/Front-End-dd893eba03c04e6ba0f75fd3e37a4ca8)
 
 ## Autor
-    <h1>Developed and designed by Alan Marcos. ©2022.</h1>
-    - Portfolio [Link](https://portafolio-sable-zeta.vercel.app/)
-    - Github [Link](https://github.com/alanmarc)
-    - Linkedin [Link](https://www.linkedin.com/in/alan-marcos-807027228)
+<h1>Developed and designed by Alan Marcos. ©2022.</h1>
+<h2>Followme</h2>
+- Portfolio [Link](https://portafolio-sable-zeta.vercel.app/)
+- Github [Link](https://github.com/alanmarc)
+- Linkedin [Link](https://www.linkedin.com/in/alan-marcos-807027228)
 
 # Getting Started with Create React App
 
