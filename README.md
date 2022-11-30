@@ -3,6 +3,7 @@
 ## Description
 Aplicación web desarrollada con Reactjs la cual consume una api de terceros, proporciona informacion de usuarios registrados y se puede iniciar sesión con cuentas registradas
 
+<img src="https://raw.githubusercontent.com/alanmarc/Front-challenge360/main/public/Challenge360.PNG">
 ## Important
     La validación de los caracteres del password se redujeron a 6 ya que esa es la longitud de la contraseña que se proporciono para el desarrollo
 
