@@ -31,6 +31,7 @@ Dirección de la Api donde fue consumido el servicio
 ## Autor
 <h1>Developed and designed by Alan Marcos. ©2022.</h1>
 <h2>Followme</h2>
+
 - Portfolio [Link](https://portafolio-sable-zeta.vercel.app/)
 - Github [Link](https://github.com/alanmarc)
 - Linkedin [Link](https://www.linkedin.com/in/alan-marcos-807027228)
